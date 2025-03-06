@@ -68,3 +68,51 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## About the Code
+
+This project is a simple movie application built using React. Below is a brief explanation of the main components and their functionalities:
+
+### `src/App.js`
+
+This is the main component of the application. It sets up the basic structure and routing for the app.
+
+### `src/components/MovieList.js`
+
+This component fetches and displays a list of movies. It uses the `MovieCard` component to render each movie.
+
+### `src/components/MovieCard.js`
+
+This component is responsible for rendering the details of a single movie, such as the title, description, and poster image.
+
+### `src/components/MovieDetail.js`
+
+This component displays detailed information about a selected movie. It is shown when a user clicks on a movie from the `MovieList`.
+
+### `src/services/api.js`
+
+This file contains functions for making API calls to fetch movie data. It abstracts the details of the API requests from the components.
+
+### `src/styles`
+
+This directory contains the CSS files for styling the components. Each component has its own CSS file to keep styles modular and maintainable.
+
+### `src/utils`
+
+This directory contains utility functions that are used across the application, such as formatting dates or handling errors.
+
+### State Management
+
+The application uses React's built-in state management to handle the state of the components. State is lifted up to the `App` component where necessary to manage the flow of data between components.
+
+### Routing
+
+React Router is used for handling navigation between different pages of the application. The routes are defined in the `App.js` file.
+
+### Testing
+
+The application includes tests for the components using Jest and React Testing Library. Tests are located in the `src/__tests__` directory.
+
+### Deployment
+
+The application can be deployed to any static site hosting service. The `npm run build` command creates a production-ready build of the app in the `build` folder.
